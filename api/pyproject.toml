@@ -3,4 +3,6 @@ name = "flashcard-quiz"
 version = "0.1.0"
 description = "The API backend for a simple fullstack flashcard app."
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "fastapi>=0.116.1",
+]
