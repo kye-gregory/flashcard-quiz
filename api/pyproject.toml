@@ -5,5 +5,7 @@ description = "The API backend for a simple fullstack flashcard app."
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.116.1",
+    "pydantic>=2.11.9",
+    "pydantic-settings>=2.10.1",
     "uvicorn>=0.35.0",
 ]
