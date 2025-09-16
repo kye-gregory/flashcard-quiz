@@ -5,4 +5,5 @@ description = "The API backend for a simple fullstack flashcard app."
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.116.1",
+    "uvicorn>=0.35.0",
 ]
