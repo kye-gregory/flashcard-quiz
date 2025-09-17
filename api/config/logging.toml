@@ -1,0 +1,43 @@
+version = 1
+disable_existing_loggers = false
+
+
+[formatters]
+[formatters.simple]
+format = "[%(levelname)s] %(asctime)s: %(message)s"
+datefmt = "%H:%M:%S"
+
+[formatters.json]
+"()" = "app.logging.formatters.JSONFormatter"
+
+[formatters.json.fmt_keys]
+level = "levelname"
+message = "message"
+timestamp = "timestamp"
+logger = "name"
+module = "module"
+function = "funcName"
+line = "lineno"
+thread_name = "threadName"
+
+
+[handlers]
+[handlers.stdout]
+class = "logging.StreamHandler"
+level = "DEBUG"
+formatter = "simple"
+stream = "ext://sys.stdout"
+
+[handlers.file]
+class = "logging.handlers.RotatingFileHandler"
+level = "DEBUG"
+formatter = "json"
+filename = "flashcard-quiz-api.log"
+maxBytes = 10485760
+backupCount = 3
+delay = false
+
+
+[root]
+level = "DEBUG"
+handlers = ["stdout", "stderr", "file"]
