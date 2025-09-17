@@ -16,3 +16,5 @@ class Settings(BaseSettings):
     ENVIRONMENT: Literal["local", "production"] = "local"
     HOST: str
     PORT: int
+
+    LOGGING_CONFIG_FILE: str
