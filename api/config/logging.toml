@@ -40,4 +40,4 @@ delay = false
 
 [root]
 level = "DEBUG"
-handlers = ["stdout", "stderr", "file"]
+handlers = ["stdout", "file"]
