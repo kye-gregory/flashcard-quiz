@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "The API backend for a simple fullstack flashcard app."
 requires-python = ">=3.12"
 dependencies = [
+    "aiosqlite>=0.21.0",
     "fastapi>=0.116.1",
     "pydantic>=2.11.9",
     "pydantic-settings>=2.10.1",
