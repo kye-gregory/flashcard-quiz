@@ -18,3 +18,5 @@ class Settings(BaseSettings):
     PORT: int
 
     LOGGING_CONFIG_FILE: str
+
+    DB_URL: str = "sqlite+aiosqlite:///./app.db"
